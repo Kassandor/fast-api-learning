@@ -4,7 +4,7 @@ PORT = 8000
 HOST = localhost
 
 run: ## Run app
-	uvicorn main:app -h ${HOST} -p ${PORT}
+	uvicorn main:app --host ${HOST} --port ${PORT}
 
 help: ## Help message
 	@echo "Usage: make [command]"
